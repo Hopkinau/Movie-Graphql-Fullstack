@@ -1,0 +1,81 @@
+CREATE USER
+mutation CreateUser($input: CreateUserInput!) {
+  createUser(input: $input) {
+    id
+    username
+    email
+    createdAt
+    token
+  }
+}
+CREATE USER - VARIABLES 
+{
+  "input": {
+    "username": "daniel",
+    "email": "daniel@daniel.com",
+    "password": "123456789"
+  }
+}
+
+LOGIN
+mutation Mutation($input: LoginInput!) {
+  loginUser(input: $input) {
+    createdAt
+    email
+    id
+    token
+    username
+  }
+}
+LOGIN - VARIABLES 
+{
+  "input": {
+    "email": "daniel@daniel.com",
+    "password": "123456789"
+  }
+}
+
+CREATEJOURNALENTRY
+mutation CreateJournalEntry($input: JournalEntryInput!) {
+  createJournalEntry(input: $input) {
+    id
+    title
+    body
+    mood
+    createdAt
+    updatedAt
+    user
+  }
+}
+CREATEJOURNALENTRY - VARIABLES
+{
+  "input": {
+    "body": "new test",
+    "mood": 3,
+    "title": "new test",
+    "user": "646ab3ad4e0c9da7e423a306"
+  }
+}
+
+UPDATEJOURNALENTRY
+mutation UpdateJournalEntry($updateJournalEntryId: ID!, $input: JournalEntryInput!) {
+  updateJournalEntry(id: $updateJournalEntryId, input: $input) {
+    body
+    createdAt
+    id
+    mood
+    title
+    updatedAt
+    user
+  }
+}
+UPDATEJOURNALENTRY - Variables 
+{
+  "updateJournalEntryId": "646ab44aea51be7d548bbf59",
+  "input": {
+    "body": "test3",
+    "mood": 3,
+    "title": "test3",
+    "user": "646ab3ad4e0c9da7e423a306"
+  },
+}

@@ -1,0 +1,8 @@
+{
+  "appEnv": "development",
+  "appPrivateKey": "defaultPrivateKey",
+  "db": {
+    "name": "Movie2",
+    "connectionString": "mongodb://localhost:37017/"
+  }
+}

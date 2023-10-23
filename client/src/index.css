@@ -1,0 +1,190 @@
+/* Typography */
+.bold {
+  font-weight: bold !important;
+}
+
+a {
+  color: white; /* replace with your desired color */
+}
+
+a:link {
+  color: white; /* replace with your desired color */
+}
+
+a:hover {
+  color: black; /* replace with your desired hover color */
+}
+
+.text-muted {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Cards */
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  font-size: 1.7rem;
+}
+
+.form-shadow {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+.background-hover {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: white;
+  color: black;
+}
+.background-hover:link {
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+}
+
+.background-hover:hover {
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+  color: black;
+}
+
+.background-hover:active {
+  border-color: black !important;
+}
+
+.btn-main {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Inner Shadow */
+.inner-shadow {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+  width: 40px;
+  height: 40px;
+}
+
+.inner-shadow:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.6);
+  width: 40px;
+  height: 40px;
+}
+
+/* Inner Shadow Emoji */
+.inner-shadow-emoji {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  width: 60px;
+  height: 60px;
+  padding: 0.6rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-inner-shadow {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4), 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.btn-inner-shadow:hover {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.inner-shadow-emoji-large {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  width: 90px;
+  height: 90px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem !important;
+}
+
+.emoji {
+  font-size: 2.5rem;
+}
+
+/*Chrome*/
+input[type="range"] {
+  overflow: visible;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 2.1rem;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  margin-top: 0rem;
+  width: 2rem;
+  height: 2rem;
+  background: #222222;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  background: #222222;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.alert-dark {
+  background-color: rgba(255, 132, 0, 0.857);
+  border: 1px solid rgba(255, 132, 0, 0.857);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 0.3rem 0.3rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.min-width {
+  min-width: 500px !important;
+}
+
+/* Card Background Colours */
+.bg-0 {
+  background: linear-gradient(to bottom, #0f6e3d, #198754);
+  /* green */
+}
+
+.bg-1 {
+  background: linear-gradient(to bottom, #0d8ebf, #0dcaf0);
+  /* light blue */
+}
+
+.bg-2 {
+  background: linear-gradient(to bottom, #0d4aa8, #0d6efd);
+  /* blue */
+}
+
+.bg-3 {
+  background: linear-gradient(to bottom, #b36b00, #ffa500);
+  /* orange */
+}
+
+.bg-4 {
+  background: linear-gradient(to bottom, #a80000, #dc3545);
+  /* orange-red */
+}
