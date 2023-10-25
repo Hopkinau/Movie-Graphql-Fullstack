@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 function Header({ user, onLogout }) {
   // Returning the JSX for the Header component
   return (
-    <Nav className='ms-auto align-items-center d-flex flex-column'>
+    <Nav className='ms-auto  d-flex flex-column'>
       {/* Rendering the Journal title */}
       <div className='d-flex'>
         <Link to='/' className='text-decoration-none'>
