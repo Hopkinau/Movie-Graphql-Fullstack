@@ -1,3 +1,8 @@
+//1.The purpose of this component is to display the movie entries on the home page
+//2.The purpose of global variables is to import the necessary components and functions
+//3.The purpose of the useMutation hook is to delete movie entries
+//4.The purpose of data,users props is to pass the data and user objects to the component
+
 import { Card, Button } from 'react-bootstrap'; //import the Card and Button components from react bootstrap
 import { useMutation, gql } from '@apollo/client'; //import the useMutation hook from apollo client
 import { Link } from 'react-router-dom'; //import the Link component

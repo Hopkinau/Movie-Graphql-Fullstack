@@ -1,4 +1,10 @@
 // React
+//1.The Purpose of this component is to create a new movie entry
+//2 The purpose of all global variables are to store the data from the user and the data from the form
+//3a. The purpose of the onSubmit function is to submit the form data to the database
+//3b. The purpose of the scoreToEmoji function is to convert the mood score to an emoji
+//4.The Purpose of props parameter is to pass data from the parent component to the child component
+
 import { Controller, useForm } from 'react-hook-form'; //React Hook Form
 import Joi from 'joi'; //Joi Validation Library
 import { joiResolver } from '@hookform/resolvers/joi'; //Joi Resolver for React Hook Form. - This is needed to use Joi with React Hook Form
